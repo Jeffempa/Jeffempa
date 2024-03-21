@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page of Jeffempa</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./index.css" type="text/css" media="all"/>
 </head>
 <body>
     <header  class="container">
         <section class="left-section">
             <div class="logo">
-                <img src="./imagenes/logo.png" alt="icono-logo">
+                <img src="./imagenes/logo.png" alt="icono-logo"/>
             </div>
             <div class="company-name">
                 <h1>Jeffempa</h1>
@@ -19,7 +18,7 @@
         </section>
         <section class="right-section">
             <nav>
-                <ul class="menu">
+                <ul id="menu" class="menu">
                     <li><a href="#about-me">Sobre Mí</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
@@ -38,9 +37,9 @@
         <section class="info">
             <h1>Radicado en Perú</h1>
             <p>20 años</p>
-            <img src="./imagenes/mi-foto.png" alt="photo">
+            <img src="./imagenes/mi-foto.png" alt="photo"/>
         </section>
-        <section class="info-text">
+        <div class="info-text">
             <h1>Arte, 
                 Hay en todos lados. Solo busquemos la belleza.</h1>
             <p>Soy un joven entusiasta y apasionado por las tecnologías de la 
@@ -55,40 +54,40 @@
                 no solo eso, es fascinante el arte de querer crear nuevas ideas y 
                 mejorarlas constantemente, gracias al diseño puedo mezclar colores y 
                 con la programación. hacerlo más realista”.</p>
-        </section>
+            </div>
     </section>
 
     <section id="skills" class="tres">
         <section>
             <h1>Mis Habilidades</h1>
             <h2>Como Diseñador:</h2>
-            <section>
+            <div>
                 <ul class="iconos">
                     <li>
-                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle">
-                        <img src="./iconos/diseño-web.png" alt="web-design" class="icons">
+                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle"/>
+                        <img src="./iconos/diseño-web.png" alt="web-design" class="icons"/>
                         <h3>Diseño Web</h3>
                     </li>
                     <li>
-                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle">
-                        <img src="./iconos/Diseño-movil.png" alt="mobile-design" class="icons">
+                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle"/>
+                        <img src="./iconos/Diseño-movil.png" alt="mobile-design" class="icons"/>
                         <h3>Diseño Movíl</h3>
                     </li>
                     <li>
-                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle">
-                        <img src="./iconos/illustracion.png" alt="illustrator" class="icons">
+                        <img src="./imagenes/Ellipse.png" alt="elipse" class="circle"/>
+                        <img src="./iconos/illustracion.png" alt="illustrator" class="icons"/>
                         <h3>Ilustración</h3>
                     </li>
                 </ul>
-            </section>
+            </div>
         </section>
     </section>
 
     <section class="cuatro">
-        <section class="cuatro-a">
+        <div class="cuatro-a">
             <h1>Como Programador Full Stack</h1>
         <p>Ingeniero full-stack que cree en el poder del desarrollo web. Experimentado en todas las etapas del desarrollo full-stack avanzado. Enfocado en el desarrollo de aplicaciones de una sola página, animaciones CSS/JS, semántica, accesibilidad y mejora progresiva. Dando también mis conocimientos en base de Datos en MySQL, junto con Node Js, PHP y Python creando una mejor experiencia al usuario y dándole la seguridad al 100%. Sin embargo, me encanta explorar nuevos idiomas y siempre trato de estar actualizado.</p>
-        </section>
+        </div>
         <section class="cuatro-b">
             <ul class="row-1">
                 <li>Html y Css</li>
@@ -105,15 +104,56 @@
         </section>
         <section class="cuatro-c">
             <h1>Idiomas:</h1>
-            <section class="spanish">
-                <h2>Español</h2>
-                <p>Nativo</p>
-            </section>
-            <section class="english">
-                <h2>Inglés</h2>
-                <p>Intermedio</p>
-            </section>
+            <div>
+                <section class="spanish">
+                    <h2>Español</h2>
+                    <p>Nativo</p>
+                </section>
+                <section class="english">
+                    <h2>Inglés</h2>
+                    <p>Intermedio</p>
+                </section>
+            </div>
         </section>
     </section>
+
+    <section id="contact" class="cinco">
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Por favor contácteme a través de este formulario y le responderé dentro de las 24 horas.</p>
+            <p>O llamamé al +51 970 218 832</p>
+            <p>manuelparedesdiciembre0512@gmail.com</p>
+        </div>
+        <div class="form-container">
+            <h2>Envíame un mensaje</h2>
+            <form action="#">
+                <div>
+                    <input placeholder="Nombres Completos" type="text" name="name" id="name">
+                </div>
+                <div>
+                    <input placeholder="Correo Electroníco" type="text" name="email" id="email">
+                </div>
+                <div>
+                    <input placeholder="Asunto" type="text" name="subject" id="subject">
+                </div>
+                <div>
+                    <input placeholder="Phone Number" type="text" name="phone" id="phone">
+                </div>
+                <div class="textarea-field">
+                    <textarea placeholder="Comentarios" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <p>manuelparedesdiciembre0512@gmail.com</p>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./send.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

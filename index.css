@@ -6,6 +6,10 @@
     font-family: "Homenaje";
     src: url("./Homenaje/Homenaje-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: 'Holtwood';
+    src: url('./Holtwood_One_SC/HoltwoodOneSC-Regular.ttf') format('truetype');
+}
 .container {
     display: flex;
     align-items: center;
@@ -171,13 +175,13 @@ body {
 }
 .cuatro {
     text-align: center;
-    height: 500px;
+    padding: 40px 0;
 }
 .cuatro-a h1 {
     font-size: 48px;
     font-family: 'Homenaje', sans-serif;
     color: #6271FF;
-    margin: 30px 0 50px 0;
+    margin: 70px 0 50px 0;
 }
 .cuatro-a p {
     font-size: 29px;
@@ -209,4 +213,127 @@ body {
     font-size: 60px;
     color: #6271FF;
     font-family: 'Homenaje', sans-serif;
+    margin-bottom: 100px;
+}
+.cuatro-c {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.cuatro-c h1{
+    color: #6271FF;
+    font-size: 48px;
+    font-family: 'Homenaje', sans-serif;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.cuatro-c .spanish,
+.cuatro-c .english {
+    display: inline-block; /* Usamos flexbox para alinear los elementos en una columna */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+}
+.cuatro-c h2,
+.cuatro-c p {
+    margin: 0; /* Quitamos todos los márgenes internos */
+}
+.cuatro-c .spanish h2,
+.cuatro-c .spanish p,
+.cuatro-c .english h2,
+.cuatro-c .english p {
+    color: white;
+    font-family: 'Homenaje', sans-serif;
+    margin: 0; /* Quitamos todos los márgenes internos */
+}
+.cuatro-c .spanish h2{
+    color: white;
+    font-size: 36px;
+    font-family: 'Homenaje', sans-serif;
+    margin-right: 300px;
+}
+.cuatro-c .spanish p {
+    color: #6271FF;
+    font-size: 32px;
+    font-family: 'Homenaje', sans-serif;
+    margin-top: 20px;
+    margin-right: 302px;
+    margin-bottom: 60px;
+}
+.cuatro-c .english h2 {
+    color: white;
+    font-size: 36px;
+    font-family: 'Homenaje', sans-serif;
+    margin-left: 300px;
+}
+.cuatro-c .english p {
+    color: #6271FF;
+    font-size: 32px;
+    font-family: 'Homenaje', sans-serif;
+    margin-top: 20px;
+    margin-left: 302px;
+    margin-bottom: 60px;
+}
+.contact-info h2 {
+    font-size: 36px;
+    margin-top: 50px;
+    font-family: 'Holtwood', sans-serif;
+    color: #6271FF;
+}
+.cinco {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+.contact-info p{
+    font-size: 20px;
+    font-family: 'Homenaje', sans-serif;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+.form-container h2 {
+    font-size: 30px;
+    font-family: 'Homenaje', sans-serif;
+    color: #6271FF;
+}
+.form-container form {
+    flex-grow: 1;
+}
+#contact form > div {
+    width: 300px;
+}
+#contact form > div > * {
+    width: 100%;
+}
+
+#contact form input,
+#contact form textarea {
+    width: calc(100% + 50px);
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: white;
+    position: relative;
+    left: 5px;
+}
+#contact form textarea{
+    border: none;
+    resize: none;
+}
+
+.pie {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 50px;
 }

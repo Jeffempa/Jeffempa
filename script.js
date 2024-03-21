@@ -7,3 +7,12 @@ document.querySelector('.menu').addEventListener('click', function(e) {
         }, 2000);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactLink = document.querySelector('#menu a[href="#contact"]')
+    contactLink.addEventListener('click', function(e) {
+        e.preventDefault()
+        const targetSection = document.querySelector('#contact')
+        targetSection.scrollIntoView({ behavior: 'smooth' })
+    })
+})
